@@ -11,7 +11,7 @@ class TodoDetail extends React.Component {
 
     componentDidMount() {
         const todoID = this.props.match.params.todoID;
-        axios.get(`http://127.0.0.1:8000/${todoID}`)
+        axios.get(`http://127.0.0.1:8000/api/${todoID}`)
             .then(res => {
                 this.setState({
                     todo: res.data

@@ -9,7 +9,7 @@ class TodoList extends React.Component {
     }
 
     componentDidMount() {
-        axios.get("http://127.0.0.1:8000/")
+        axios.get("http://127.0.0.1:8000/api/")
             .then(res => {
                 this.setState({
                     todos: res.data
